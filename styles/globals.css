@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.font-delta {
+  font-family: "Staatliches", cursive;
 }
 
-* {
-  box-sizing: border-box;
+.logo-img {
+  width: 400px;
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    width: 550px;
+  }
+}
+.image-16x9 {
+  position: relative;
+  padding-bottom: 56.2%;
+}
+
+.image-16x9 img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
