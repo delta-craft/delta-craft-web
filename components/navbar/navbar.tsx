@@ -22,23 +22,28 @@ const Navbar: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link href="/">
+              <Link href="/" passHref>
                 <a className="nav-link" aria-current="page" href="#">
                   Domů
                 </a>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/#current-season">
-                <a className="nav-link" aria-current="page" href="#">
-                  Aktuální season
-                </a>
-              </Link>
-            </li>
+
             <li className="nav-item">
               <Link href="/#join-us">
                 <a className="nav-link" aria-current="page" href="#">
                   Přidej se k nám
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="https://portal.deltacraft.eu">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="https://portal.deltacraft.eu"
+                >
+                  Portál hráče
                 </a>
               </Link>
             </li>

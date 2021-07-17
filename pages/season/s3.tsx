@@ -10,10 +10,7 @@ const Page: React.FC = () => {
         <title>DeltaCraft</title>
       </Head>
       <Jumbotron />
-      <div className="container">
-
-      </div>
-      
+      <div className="container"></div>
     </MainLayout>
   );
 };

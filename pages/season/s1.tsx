@@ -63,12 +63,16 @@ const Page: React.FC<IProps> = ({ photoNames }) => {
 export default Page;
 
 export const getStaticProps: GetStaticProps<IProps> = async (context) => {
-  const p = path.join(process.cwd(), "public", "img", "screenshots", "s1");
+  //const p = path.join(process.cwd(), "public", "img", "screenshots", "s1");
 
-  if (!fs.existsSync(p)) {
+  /* if (!fs.existsSync(p)) {
     return { notFound: true };
   }
-  const files = fs.readdirSync(p);
+  */
+
+  const files = Array(43)
+    .fill(null)
+    .map((x, i) => `image (${i + 1}).webp`);
 
   return {
     props: {
